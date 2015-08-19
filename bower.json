@@ -1,0 +1,26 @@
+{
+  "name": "observationsOnAngular",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jjaburke91/observationsOnAngular",
+  "authors": [
+    "jjaburke@hotmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-route": "~1.4.4",
+    "ui-router": "~0.2.15"
+  },
+  "devDependencies": {
+    "angular": "~1.4.4",
+    "angular-route": "~1.4.4",
+    "ui-router": "~0.2.15"
+  }
+}
