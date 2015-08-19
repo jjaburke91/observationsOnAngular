@@ -31,7 +31,7 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             dist: {
-                src: [ 'angular/*.js', 'angular/**/*.js' ],
+                src: [ 'angular/*.js', 'angular/**/*.js', 'angular/**/**/*.js' ],
                 dest: 'dist/dist-app.js'
             }
         },
