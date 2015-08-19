@@ -1,7 +1,24 @@
 
 <h2>Sharing Data With Services </h2>
 
-<div>
-    <!-- <code ng-non-bindable></code> -->
-    <code>something</code>
+<div class="scenario-description">
+    <p>
+        This scenario observes how Angular's ng-bind function can watch values from a service, comparing what happens when we bind a local scope variable to a service's *object*, and a service's *primitive value*.
+    </p>
+    <p>
+        The result displays that ng-bind is capable of watching changes to a service's object, but *NOT* a primitive value.
+    </p>
+</div>
+
+<div class="scenario-sandbox">
+    <div>
+        <p>
+            {{serviceObject.value}} - <code ng-non-bindable>{{serviceObject.value}}</code> - Local scope value is bound to object from service
+        </p>
+        <p>
+            {{servicePrimValue}} - <code ng-non-bindable>{{servicePrimValue}}</code> - Local scope value is bound to primitive value from service
+        </p>
+    </div>
+
+    <button ng-click="sharedService.incServiceValues()">Increment Service Model Values</button>
 </div>
