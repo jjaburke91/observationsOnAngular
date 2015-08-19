@@ -1,5 +1,4 @@
-
-<h2>Sharing Data With Services </h2>
+<h2>Binding to service objects or static values (numeric, string etc.)</h2>
 
 <div class="scenario-description">
     <p>
@@ -10,15 +9,16 @@
     </p>
 </div>
 
+<button ng-click="sharedService.incServiceValues()">Increment Service Model Values</button>
+
 <div class="scenario-sandbox">
     <div>
         <p>
-            {{serviceObject.value}} - <code ng-non-bindable>{{serviceObject.value}}</code> - Local scope value is bound to object from service
+            {{serviceObject.val}} - <code ng-non-bindable>{{serviceObject.val}}</code> - Local scope value is bound to object from service
         </p>
         <p>
             {{servicePrimValue}} - <code ng-non-bindable>{{servicePrimValue}}</code> - Local scope value is bound to primitive value from service
         </p>
     </div>
 
-    <button ng-click="sharedService.incServiceValues()">Increment Service Model Values</button>
 </div>

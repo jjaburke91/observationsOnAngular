@@ -9,9 +9,17 @@ ooaApp.config( ['$stateProvider', '$urlRouterProvider', function($stateProvider,
             url: '/home',
             templateUrl: '/angular/home.html'
         })
-        .state('sharing-data-with-services', {
-            url: "/sharing-data-with-services",
-            templateUrl: "angular/sharing-data-with-services/sharing-data-with-services.html",
-            controller: 'sharingDataWithServicesController'
-        });
+        .state('binding-to-service-or-scope', {
+            url: "/binding-to-service-or-scope",
+            templateUrl: "angular/sharing-data-with-services/binding-to-service-or-scope/binding-to-service-or-scope.html",
+            controller: 'bindingServiceOrScopeController',
+            parent: 'home'
+        })
+        .state('binding-with-objects-or-values', {
+            url: "/binding-with-objects-or-values",
+            templateUrl: "angular/sharing-data-with-services/binding-with-objects-or-values/binding-with-objects-or-values.html",
+            controller: 'bindingServiceOrScopeController',
+            parent: 'home'
+        })
+        ;
 }]);

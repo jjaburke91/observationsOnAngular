@@ -1,0 +1,16 @@
+<h2>Binding To Direct To A Service Function</h2>
+
+<div class="scenario-description">
+    <p>View the console log to see how frequently the service function is being executed. </p>
+    <p>The function gets executed *every time* the model changes. This indicates the the digest cycle is watching the result of that function, executing it on every cycle - inefficient!</p>
+    <p>Instead, we can bind the service object to a scope variable</p>
+</div>
+
+<button ng-click="sharedService.incServiceValues()">Increment Service Model Values</button>
+
+<div class="scenario-sandbox">
+    <div>
+        <p>
+            {{sharedService.getModelObjectFunction()}} - <code ng-non-bindable>{{sharedService.getModelObjectFunction()}}</code> - Directly executes service function to retrieve service object.
+        </p>
+</div>
